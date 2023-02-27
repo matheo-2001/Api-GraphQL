@@ -13,12 +13,12 @@ export class CreatePersonInput {
   name: string;
 
   @Field(() => Date, { description: 'La date anniversaire de la personne' })
-  birthdate: Date;
+  birthday: Date;
 
   @Field(() => CreateAdressInput, { description: 'Adresse de la personne' })
   adress: CreateAdressInput;
   
-  @Field(() => String, { description: 'Le genre de la personne' })
+  @Field(() => Gender, { description: 'Le genre de la personne' })
   gender: Gender;
 
 }

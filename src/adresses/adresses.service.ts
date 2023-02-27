@@ -9,7 +9,7 @@ export class AdressesService {
     }
 
     create(createAdressInput: CreateAdressInput) {
-        return this.prisma.adress.create({data: createAdressInput});
+        return this.prisma.adress.create({ data: CreateAdressInput });
     }
 
     findAll() {

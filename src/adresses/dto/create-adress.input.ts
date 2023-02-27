@@ -2,7 +2,7 @@ import { InputType, Int, Field } from '@nestjs/graphql';
 
 @InputType()
 export class CreateAdressInput {
-  @Field(() => Int, { description: 'ID de la personne' })
+  @Field(() => Int, { description: 'ID de adresse' })
   id: string;
 
   @Field(() => String, { description: 'La rue de la personne' })
